@@ -23,6 +23,6 @@ Logging module
 Mock module
 
 #### Breakdown:
-There were a couple of key design choices made throughout this project. The first was the implementation of the logging module. Rather than scatter the codebase with comments that would then need to be commented out or removed later, I researched the logging module. It has the ability to provide meaningful print statements, but can be easily removed by changing the master logging level in one location. This saved me a lot of time while refactoring my code.
+There were a couple of key design choices made throughout this project. The first was the implementation of the logging module. Rather than scatter the codebase with comments that would then need to be commented out or removed later, I researched the logging module. It has the ability to provide meaningful print statements, but can be easily removed by changing the master logging level in one location. This saved me a lot of time while refactoring my code. 
 
 The other key design decision came from issues passing one of the unit tests. What was originally an all-in-one input and validation function turned into moving the while loop and input call outside of the function into main() and transforming the function to be strictly for validating. This allowed me to keep the functionality of the code while also simplifying this key function and test case.
